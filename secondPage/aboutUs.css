@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Miniver&family=Poppins:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+body {
+    position: relative;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: radial-gradient(ellipse at center, transparent 0%, rgba(0, 0, 0, 2.5) 100%), url(../background/back.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    z-index: -1;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+button {
+    cursor: pointer;
+    border: none;
+    background: none;
+}
+
+img {
+    width: 100%;
+}
+
+.section-content {
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+header {
+    position: fixed;
+    width: 100%;
+    z-index: 5;
+    max-width: 100%;
+    background: #b3743a;
+}
+
+header .navbar {
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.navbar .nav-logo .logo-image {
+    width: 100px;
+
+}
+
+.navbar .nav-menu {
+    display: flex;
+    gap: 20px;
+}
+
+.navbar .nav-menu .nav-link {
+    padding: 10px 18px;
+    color: white;
+    font-size: 18px;
+    border-radius: 45px;
+    transition: 0.3s ease;
+}
+
+.navbar .nav-menu .nav-link:hover {
+    color: white;
+    background: #EFBF04;
+}
+
+.navbar .search-bar {
+    --pading: 14px;
+
+
+    width: max-content;
+    display: flex;
+    align-items: center;
+    padding: var(--pading);
+    border-radius: 28px;
+    background: #f6f6f6;
+    transition: background 0.25s;
+    
+}
+
+.navbar .search-bar:focus-within {
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.75);
+}
+
+.hamburger {
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hamburger .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+    transition: 0.3s;
+}
+
+.navbar .search-input {
+    font-size: 15px;
+    font-family: 'Lexend', sans-serif;
+    color: #333333;
+    margin-left: var(--pading);
+    outline: none;
+    border: none;
+    background: transparent;
+    width: 450px;
+}
+
+.navbar .search-input::placeholder,
+.search-icon {
+    color: rgba(0, 0, 0, 0.25);
+}
+
+
+.about-section {
+    padding: 120px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 50px;
+}
+
+.section-title {
+    text-align: center;
+    padding: 60px 0 100px;
+    text-transform: uppercase;
+    font-size: x-large;
+}
+
+.section-title::after {
+    content: "";
+    width: 80px;
+    height: 5px;
+    display: block;
+    margin: 10px auto 0;
+    border-radius: small;
+    background: #b3743a;
+}
+
+.about-section .section-content-1 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.about-section .about-shop-image .about-image-1 {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about-section .section-content-2 {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    justify-content: space-between;
+    max-width: 1200px;
+    margin: 0 auto;
+    background: white;
+    padding: 40px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.about-section .about-shop-image .about-image-2 {
+    width: 400px;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+.about-section .about-shop-details .section-title {
+    padding: 0;
+}
+
+.about-section .about-shop-details .text {
+    line-height: 30px;
+    margin: 50px 0 30px;
+    text-align: center;
+    font-size: medium;
+}
+
+.about-section .social-link-list {
+    display: flex;
+    gap: 25px;
+    justify-content: center;
+}
+
+.about-section .social-link-list .social-link {
+    color: #3b141c;
+    font-size: larger;
+    transition: 0.2s ease;
+}
+
+.about-section .social-link-list .social-link:hover {
+    color: #EFBF04;
+}
+
+footer {
+    background-color: #b3743a;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 16px;
+    margin-top: 2rem;
+}

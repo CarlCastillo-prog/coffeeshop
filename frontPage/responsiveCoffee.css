@@ -1,0 +1,198 @@
+/* Responsive Design */
+@keyframes slideIn {
+    from {
+        left: -100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+@media (max-width: 1300px) {
+    .navbar .search-input {
+        width: 300px;
+    }
+
+    .navbar .nav-menu .nav-link {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 1250px) {
+    .navbar .search-input {
+        width: 250px;
+    }
+    
+    
+    .navbar .nav-menu {
+        font-size: 5px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .navbar .search-input {
+        width: 200px;
+    }
+
+    .navbar .nav-menu .nav-link {
+        font-size: 13px;
+    }
+
+    .navbar .nav-menu {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 1100px) {
+    .navbar .nav-menu {
+        font-size: 5px;
+    }
+}
+@media (max-width: 1000px) {
+    .navbar .nav-menu .nav-link {
+        font-size: 12px;
+    }
+}
+
+@media (max-width: 950px) {
+    .navbar .search-input {
+        width: 150px;
+    }
+}
+
+@media (max-width: 900px) {
+    .navbar .nav-menu {
+        display: block;
+        position: fixed;
+        left: -100%;
+        top: 120px;
+        flex-direction: column;
+        background: linear-gradient(45deg, #b3743a, #d4a574);
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transition: 0.3s;
+        box-shadow: 0 10px 27px rgba(0, 0, 0, 0.1);
+        padding: 20px 0;
+        border-radius: 0 0 10px 10px;
+        backdrop-filter: blur(10px);
+    }
+
+    .navbar .nav-menu.active {
+        left: 0;
+        animation: slideIn 0.3s ease-in-out;
+    }
+
+    .navbar .nav-menu .nav-item {
+        margin: 2.5rem 0;
+    }
+
+    .hamburger {
+        display: flex;
+        transition: 0.3s;
+    }
+
+    .hamburger.active {
+        transform: rotate(90deg);
+    }
+
+    .navbar .search-bar {
+        width: 200px;
+    }
+
+    .navbar .search-input {
+        width: 150px;
+    }
+
+    .hero-section .section-content {
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+
+    .hero-section .hero-details {
+        padding-left: 0;
+        margin-bottom: 50px;
+        text-align: center;
+        order: 2;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero-section .hero-image-wrapper {
+        margin-right: 0;
+        rotate: -20deg;
+        margin-top: 60px;
+        width: 250px;
+        height: 250px;
+        order: 1;
+    }
+
+    section .header {
+        font-size: 2rem;
+    }
+
+    .menu {
+        grid-template-columns: 1fr;
+        gap: 0.5rem;
+    }
+
+    .about-summary .section-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 20px;
+    }
+
+    .about-summary h2 {
+        font-size: 2rem;
+    }
+
+    .about-summary p {
+        max-width: 100%;
+        font-size: 1rem;
+    }
+
+    .about-summary .show-more {
+        align-self: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .navbar .search-bar {
+        width: 150px;
+    }
+
+    .navbar .search-input {
+        width: 100px;
+    }
+
+    .hero-section .hero-details .title {
+        font-size: large;
+    }
+
+    .hero-section .hero-details .subtitle {
+        font-size: large;
+    }
+
+    .hero-section .hero-details .discription {
+        font-size: small;
+    }
+
+    .hero-section .hero-details .buttons {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    section .header {
+        font-size: 1.5rem;
+    }
+
+    .menu .card1 h4, .menu .card2 h4, .menu .card3 h4, .menu .card4 h4 {
+        font-size: 1rem;
+    }
+
+    .menu .card1 p, .menu .card2 p, .menu .card3 p, .menu .card4 p {
+        font-size: 30px;
+    }
+}
